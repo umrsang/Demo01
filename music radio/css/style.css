@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body{
+	background: #EEEEEE;
+}
+
+.wrep{
+	margin: 20px auto;
+	position: relative;
+	width: 400px;
+	height: 600px;
+}
+#container{
+	width: 400px;
+	height: 600px;
+	background: rgb(250, 250, 250);
+	border-radius: 20px;
+	box-shadow: 0px 1px 15px #666;
+	overflow: hidden;
+}
+
+#cover{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: #CDD2D7;
+	overflow: hidden;
+}
+
+.songCover{
+	width: 400px;
+	height: 400px;
+}
+
+.LrcBoard{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 400px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px 20px 0 0;
+	overflow: hidden;
+	transition: all 1s;
+}
+
+.LrcULdiv{
+	position: absolute;
+	top: 50px;
+	left: -30px;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.LrcUL{
+	position: absolute;
+	top:-40px;
+	left: 30px;
+	width: 400px;
+	height: 360px;
+	list-style: none;
+	text-align: center;
+	transition: all 1s;
+}
+
+.LrcUL li{
+	display: block;
+	width: 400px;
+	height: 40px;
+	color: #aaa;
+	font-size: 1rem;;
+	transition: all 1s;
+}
+
+
+.content{
+	height: 70px;
+	width: 360px;
+	padding: 20px 20px 10px 25px;
+}
+
+.content .music-massage{
+    display: inline-block;
+    width: 260px;
+    height: 100%;
+}
+
+.content .songName{
+	font-weight: bold;
+	font-size: 26px;
+	color: #455569;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.content .singer{
+	font-weight: bold;
+	font-size: 18px;
+	color: #455569;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.content .record{
+	font-size: 14px;
+	color: #455569;
+	margin-top: 4px;
+}
+
+.music-icon{
+	display: inline-block;	
+	vertical-align: top;
+	float: right;
+	width: 90px;
+	height: 40px;
+	font-size: 1.2rem;
+	color: #222;
+
+}
+
+.music-icon i:hover{
+	cursor: pointer;
+	text-shadow: 2px 2px 3px #aaa;
+}
+.music-icon a:hover{
+	cursor: pointer;
+	text-shadow: 2px 2px 3px #aaa;
+}
+
+.music-icon *{
+	padding-right: 8px;
+}
+.music-icon a{
+	text-decoration: none;
+	color: #222;
+}
+.music-icon .faverior{
+	font-size: 1.1rem;
+}
+
+.basebar{
+	display: block;
+	border:none;
+	width: 340px;
+	height: 4px;
+	margin: 0px auto 10px auto;
+	border-radius: 2px;
+	background-color: #414141;
+	position: relative;
+	cursor: pointer;
+}
+
+.basebar .progressbar{
+	display: block;
+	border:none;
+	width: 0%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #cdd2d7;
+}
+
+.controls{
+	width: 400px;
+	height: 70px;
+	padding: 15px 0 0 40px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.controls .play-control,.music-control{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.controls .play-control{
+	width: 235px;
+	height: 50px;
+}
+.controls .play-control .btn{
+	text-shadow: 0px 0px 0px #aaa;
+}
+.controls .play-control .btn:hover{
+	text-shadow: 2px 2px 3px #aaa;
+}
+.controls .play-control .btn1{
+	cursor: pointer;
+	font-size: 3rem;	
+}
+
+.controls .play-control .btn2,
+.controls .play-control .btn3{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 50px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.controls .music-control{
+	width: 120px;
+	height: 50px;
+}
+
+.controls .music-control .m-icon {
+	padding-left: 10px;
+	line-height: 50px;
+	cursor: pointer;
+}
+.controls .music-control .m-icon:hover {
+	text-shadow: 2px 2px 3px #aaa;
+}
+
+
+.channelBox{
+	position: absolute;
+	bottom: 55px;
+	right: 0px;
+	height: 0px;
+	width: 160px;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.channelList{
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+	width: 150px;
+	height: 280px;
+	z-index: 3;
+	background: rgb(250, 250, 250);
+	border-radius: 20px;
+}
+.channelListBg{
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+	width: 150px;
+	height: 280px;
+	z-index: 1;
+	box-shadow: 0px 1px 15px #666;
+	border-radius: 20px;
+}
+
+.channelList ul{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	width: 85%;
+	height: 240px;
+	overflow: scroll;
+	overflow-x: hidden;
+	list-style: none;
+	font-size: 1.2rem;
+	color: #455569;
+	line-height: 2.5rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.channelList li{
+	transition: background-color 1s;
+}
+.channelList li:hover{
+	background: #EEEEEE;
+	/*color: #252e38;*/
+	text-shadow: 1px 1px 1px #ddd;
+}
+
+.sanjiao{
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	width: 50px;
+	height: 25px;
+	z-index: 2;
+	overflow: hidden;
+	
+}
+
+.sanjiaoTop{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	background: rgb(250, 250, 250);
+	box-shadow: 0px 1px 15px #666;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+}

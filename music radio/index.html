@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="referrer" content="no-referrer">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<script src="js/script.js" type="text/javascript"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="wrep">
+			<div id="container">
+				<div id="cover">
+					<img class="songCover" id="singerPic" src="img/ting.jpg"></img>
+					<!-- 歌词面板 -->
+					<div class="LrcBoard">
+						<div class="LrcULdiv">
+							<ul class="LrcUL">
+
+							</ul>
+						</div>
+					</div> 
+				</div>
+				<div class="content">
+					<audio></audio>
+					<div class="music-massage">
+						<p class="songName"></p>
+						<p class="singer"></p>
+					</div>
+					<!-- 分享，收藏，喜欢按钮 -->
+					<div class="music-icon">
+						<a class="share fa fa-share-square-o" href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" target="new"></a>
+						<i class=" iLove fa fa-star-o"></i>
+						<!--fa-star-->
+						<i class=" faverior fa fa-heart-o"></i>
+						<!--fa-heart-->
+					</div>
+				</div>
+				<div id="controlBoard">
+					<span class="basebar">
+              	<span class="progressbar"></span>
+					</span>
+					<div class="controls">
+						<!-- 音乐播放。换频道，下一曲按钮 -->
+						<div class="play-control">
+							<span class=" btn btn1 fa fa-play-circle" title="播放/暂停">&nbsp;</span>
+							<span class=" btn btn3 fa fa-step-forward" title="换曲">&nbsp;</span>
+						</div>
+						<!-- 循环播放，随机播放按钮 -->
+						<div class="music-control">
+							<span class="m-icon m_btnloop fa fa-refresh" title="单曲循环"></span>
+							<span class="m-icon m_btnLrc fa fa-file-text-o" title="显示切换"></span>
+							<span class="m-icon m_btnChannel fa fa-reorder " title="频道选择"></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="channelBox">
+				<div class="sanjiao">
+					<div class="sanjiaoTop"></div>
+				</div>
+				<div class="channelListBg">
+				</div>
+				<div class="channelList">
+					<ul class="list">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
