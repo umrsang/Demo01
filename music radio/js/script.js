@@ -29,10 +29,14 @@ window.onload = function() {
 	$(".btn1").click(function(event) {
 		if(myAudio.paused) {
 			myAudio.play();
+			$(".btn1").removeClass("fa-pause-circle");
+			$(".btn1").addClass("fa-play-circle");
 			console.log("play");
 		} else {
 			myAudio.pause();
 			console.log("pause");
+			$(".btn1").removeClass("fa-play-circle");
+			$(".btn1").addClass("fa-pause-circle");
 		}
 		event.stopPropagation();
 	})
